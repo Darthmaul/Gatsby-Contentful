@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styles from './navigation.module.css'
 
 export default () => (
   <nav class="navbar navbar-expand-md fixed-top">
