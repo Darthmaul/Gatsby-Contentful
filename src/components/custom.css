@@ -1,0 +1,200 @@
+/*                                      */
+/*        Virtual Toolbox Theme         */
+/*      Developed by Andrew Nolan       */
+/*                                      */
+
+/* General Classes */
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+    padding-top: 3.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.navbar-brand {
+    font-weight: 900;
+}
+
+.text-center {
+    text-align: center;
+}
+.navbar {
+    box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+    border-bottom: 1px solid rgb(212, 218, 223);
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar-nav {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+.navbar-nav .btn {
+    font-size: 14px;
+    font-weight: bold;
+}
+footer {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    background: #3c3c3c;
+    color: #FFF;
+}
+
+
+/* Page sections */
+.page-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* Page Section -- MULTI-ROW */
+/* This would be for the top section in a multi-row section */
+.page-section-mr-t {
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+/* Corresponding bottom section here lads */
+.page-section-mr-b {
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
+/* Jumbotron section */
+.jumbotron.home-section {
+    text-align: center;
+    background: url('../img/home-header.jpg') center center no-repeat, linear-gradient(rgba(23, 54, 112, 0.5),rgba(23, 54, 112, 0.5));
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #FFF;
+    margin-bottom: 0px;
+}
+
+.cat-heading {
+    margin-bottom: 0px;
+    min-height: 25%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 25vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+}
+.inner-cat-heading {
+    margin-bottom: 0px;
+    min-height: 25%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 25vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+}
+.inner-cat-heading h2 {
+    font-size: 24px;
+}
+.vertical-center {
+    min-height: 50%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 50vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+}
+
+.jumbotron h1 {
+    font-weight: 900;
+}
+.jumbotron h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.jumbotron .btn {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Some colored page sections */
+.blue-section {
+    background: rgb(56,132,255);
+    background: linear-gradient(90deg, rgba(56,132,255,1) 35%, rgba(31,101,214,1) 100%);
+    color: #FFF;
+}
+.grey-section {
+    background: #f6f9fc;
+}
+
+/* Logos section -- Home */
+.greyed-out {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    opacity: .5;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.greyed-out:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+/* Categories section */
+
+.category-box {
+    color: rgb(36, 42, 49);
+    margin: 32px 20px;
+    border: 1px solid rgb(230, 236, 241);
+    box-shadow: rgba(116, 129, 141, 0.1) 2px 1px 10px 1px;
+    background-color: rgb(255, 255, 255);
+    transition: all 250ms ease 0s;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.category-box:hover {
+    box-shadow: rgba(116, 129, 141, 0.3) 2px 1px 10px 1px;
+}
+
+.category-box i {
+    font-size: 35px;
+}
+
+.category-box h3 {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.category-box a:hover {
+    text-decoration: none;
+}
+
+/* Sidebar Accordion */
+#sidebar {
+    padding-left: 0;
+    background: #f6f9fc;
+    padding-top: 20px;
+}
+.list-group-item {
+    border: 0;
+    background: #f6f9fc;
+}
+/* level 1*/
+#sidebar .list-group .collapse .list-group-item  {
+    padding-left: 40px;
+}
+
+/* level 2*/
+#sidebar .list-group .collapse > .collapse .list-group-item {
+    padding-left: 50px;
+}
+
+/* level 3*/
+#sidebar .list-group .collapse > .collapse > .collapse .list-group-item {
+    padding-left: 60px;
+}
+.active-list-item {
+    text-decoration: underline;
+    color: #333;
+}
+
+/* Lesson Body */
+.lesson-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

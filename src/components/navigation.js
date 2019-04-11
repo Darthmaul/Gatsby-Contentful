@@ -3,14 +3,30 @@ import { Link } from 'gatsby'
 import styles from './navigation.module.css'
 
 export default () => (
-  <nav role="navigation">
-    <ul className={styles.navigation}>
-      <li className={styles.navigationItem}>
-        <Link to="/">Home</Link>
-      </li>
-      <li className={styles.navigationItem}>
-        <Link to="/blog/">Blog</Link>
-      </li>
-    </ul>
+  <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container">
+          <a class="navbar-brand" href="index.html">Virtual Team Toolbox</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <Link to="#" className="nav-link">About</Link>
+                  </li>
+                  <li class="nav-item">
+                      <Link to="#" className="nav-link">Contribute</Link>
+                  </li>
+                  <li class="nav-item">
+                      <Link to="/toolbox" className="btn btn-warning">Toolbox</Link>
+
+                  </li>
+                  
+            
+              </ul>
+          </div>
+      </div>
   </nav>
+
 )
