@@ -42,6 +42,9 @@ footer {
     color: #FFF;
 }
 
+.container-fluid {
+    padding: 0px;
+}
 
 /* Page sections */
 .page-section {
@@ -68,6 +71,7 @@ footer {
     background-blend-mode: overlay;
     color: #FFF;
     margin-bottom: 0px;
+    border-radius: 0;
 }
 
 .cat-heading {
